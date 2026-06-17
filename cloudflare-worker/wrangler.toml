@@ -1,8 +1,0 @@
-name = "nose-tea-onboarding-api"
-main = "src/worker.js"
-compatibility_date = "2026-06-12"
-
-[[d1_databases]]
-binding = "DB"
-database_name = "nose-tea-onboarding"
-database_id = "a745011e-0d0a-4288-b579-20b04bb714be"
