@@ -1,0 +1,21 @@
+name = "nose-tea-onboarding-api"
+main = "src/worker.js"
+compatibility_date = "2026-06-12"
+
+# Non-secret config — kept here so `wrangler deploy` NEVER wipes them again.
+# (Plaintext vars set only in the dashboard get removed on every deploy; secrets are safe.)
+[vars]
+ADMIN_EMAILS = "hrtraining@nosetea.com"
+LINE_LOGIN_CHANNEL_ID = "2010372532"
+ALLOWED_ORIGINS = "https://ob-dkm.pages.dev"
+
+# SECRETS (do NOT put here — keep in dashboard so they stay encrypted):
+#   LINE_CHANNEL_ACCESS_TOKEN, LINE_LOGIN_CHANNEL_SECRET
+
+[triggers]
+crons = ["0 2 * * *"]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "nose-tea-onboarding"
+database_id = "a745011e-0d0a-4288-b579-20b04bb714be"
