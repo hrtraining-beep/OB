@@ -1,0 +1,12 @@
+{
+  "name": "Nose Tea HR Portal",
+  "short_name": "Nose Tea HR",
+  "display": "browser",
+  "start_url": "/",
+  "scope": "/",
+  "background_color": "#f5fbf8",
+  "theme_color": "#426454",
+  "icons": [
+    { "src": "/assets/logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any" }
+  ]
+}
